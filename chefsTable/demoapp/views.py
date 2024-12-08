@@ -7,3 +7,6 @@ def say_hello(request):
 
 def home(request):
     return HttpResponse("Welcome to the Chefs' Table!")
+
+def display_date(request):
+    return HttpResponse("Today's date is " + str(datetime.now()))
