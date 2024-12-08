@@ -1,12 +1,6 @@
 from django.http import HttpResponse 
-from django.shortcuts import render
-from datetime import datetime
-
-def say_hello(request):
-    return(HttpResponse("Hello, Django!"))
+from django.shortcuts import render 
 
 def home(request):
-    return HttpResponse("Welcome to the Chefs' Table!")
+    return HttpResponse("Testing the Django server!")
 
-def display_date(request):
-    return HttpResponse("Today's date is " + str(datetime.now()))
